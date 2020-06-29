@@ -21,7 +21,7 @@ python3Packages.buildPythonApplication rec {
   # ```
   doCheck = false;
 
-  propagatedBuildInputs = with pkgs; [ git python3 ];
+  propagatedBuildInputs = with pkgs; [ git python3 openssl proot ];
 
   meta = with stdenv.lib; {
     homepage = "https://gitlab.com/postmarketOS/pmbootstrap";
