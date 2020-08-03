@@ -11,15 +11,15 @@ env:
     # Format: Your cachix cache host name without the ".cachix.org" suffix.
     # Example: mycache (for mycache.cachix.org)
     #
-    # For this to work, you also need to set the  CACHIX_SIGNING_KEY
+    # For this to work, you also need to set the CACHIX_SIGNING_KEY
     # in your repository settings in Travis.
-    - CACHIX_CACHE=
+    - CACHIX_CACHE=mhueschen
     # Set this to notify the global nur package registry that changes are
     # available.
     #
     # The repo name as used in
     # https://github.com/nix-community/NUR/blob/master/repos.json
-    - NUR_REPO=<YOUR_NUR_REPO_NAME_HERE>
+    - NUR_REPO=https://github.com/mhuesch/nur-packages
 
 matrix:
   include:
