@@ -15,7 +15,6 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   pmbootstrap = pkgs.callPackage ./pkgs/pmbootstrap { };
-  speedread-rs = pkgs.callPackage ./pkgs/speedread-rs { };
 
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
